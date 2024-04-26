@@ -1,0 +1,6 @@
+steps:
+  - uses: actions/checkout@v3
+  - uses: nttld/setup-ndk@v1
+    with:
+      ndk-version: r25c
+  - run: ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.bp
