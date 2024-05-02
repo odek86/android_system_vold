@@ -16,7 +16,7 @@ jobs:
     - uses: nttld/setup-ndk@v1
       with:
         ndk-version: r25c
-    - run: ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.bp APP_PLATFORM=android-25
+    - run: ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./CMakeLists.txt APP_PLATFORM=android-25
     - name: make
       run: make
     - name: make check
